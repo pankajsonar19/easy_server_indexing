@@ -1,4 +1,6 @@
-from distutils.core import setup
+from setuptools import setup
+
+
 
 setup(
     name='easy_server_indexing',  # How you named your package folder (MyLib)
@@ -7,12 +9,14 @@ setup(
     license='mit  ',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='The following package can be integrated into a server indexing softwares which will skip the already traversed files and resume the traversing from the stated error file path.',
     # Give a short description about your library
+    long_description = pypandoc.convert('README.md', 'rst'),
+        #
     author='Pankaj Sonar, Piyush Rumao',  # Type in your name
-    author_email='pankaj.sonar@ucdconnect.ie, piyush_rumao@ucdconnect.ie',  # Type in your E-Mail
+    author_email='pankaj.sonar@ucdconnect.ie, piyushrumao@gmail.com',  # Type in your E-Mail
     url='https://github.com/pankajsonar19/easy_server_indexing',
     # Provide either the link to your github or to your website
-    download_url='https://github.com/pankajsonar19/easy_server_indexing/archive/0.1.tar.gz',  # I explain this later on
-    keywords=['indexing', 'resume_code', 'resume', 'resumecode','resume_crawl','oswalk','traverse','server_indexing'],  # Keywords that define your package best
+    download_url='https://github.com/pankajsonar19/easy_server_indexing.git',  # I explain this later on
+    keywords=['indexing', 'resume_code', 'resume', 'resumecode','resume_crawl','oswalk','traverse','server_indexing','pause','pause indexing','crawl','listdir'],  # Keywords that define your package best
     #install_requires=[  # I get to this in a second],
     classifiers=[
         'Development Status :: 3 - Alpha',
