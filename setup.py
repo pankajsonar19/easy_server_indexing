@@ -1,3 +1,4 @@
+import pypandoc
 from setuptools import setup
 
 
@@ -17,7 +18,7 @@ setup(
     # Provide either the link to your github or to your website
     download_url='https://github.com/pankajsonar19/easy_server_indexing.git',  # I explain this later on
     keywords=['indexing', 'resume_code', 'resume', 'resumecode','resume_crawl','oswalk','traverse','server_indexing','pause','pause indexing','crawl','listdir'],  # Keywords that define your package best
-    #install_requires=[  # I get to this in a second],
+    #install_requires=[  # I get to thi s in a second],
     classifiers=[
         'Development Status :: 3 - Alpha',
         # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
