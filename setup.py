@@ -1,6 +1,8 @@
 import pypandoc
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 
 setup(
@@ -10,7 +12,7 @@ setup(
     license='mit  ',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='The following package can be integrated into a server indexing softwares which will skip the already traversed files and resume the traversing from the stated error file path.',
     # Give a short description about your library
-    long_description = pypandoc.convert('README.md', 'rst'),
+    long_description = long_description,
         #
     author='Pankaj Sonar, Piyush Rumao',  # Type in your name
     author_email='pankaj.sonar@ucdconnect.ie, piyushrumao@gmail.com',  # Type in your E-Mail
@@ -18,7 +20,7 @@ setup(
     # Provide either the link to your github or to your website
     download_url='https://github.com/pankajsonar19/easy_server_indexing.git',  # I explain this later on
     keywords=['indexing', 'resume_code', 'resume', 'resumecode','resume_crawl','oswalk','traverse','server_indexing','pause','pause indexing','crawl','listdir'],  # Keywords that define your package best
-    #install_requires=[  # I get to thi s in a second],
+    install_requires=['pypandoc'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
