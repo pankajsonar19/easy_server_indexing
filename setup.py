@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
     name='easy_server_indexing',  # How you named your package folder (MyLib)
     packages=['easy_server_indexing'],  # Chose the same as "name"
-    version='0.1',  # Start with a small number and increase it with every change you make
+    version='0.1.1',  # Start with a small number and increase it with every change you make
     license='mit  ',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='The following package can be integrated into a server indexing softwares which will skip the already traversed files and resume the traversing from the stated error file path.',
     # Give a short description about your library
